@@ -44,6 +44,7 @@ public class CacheConfiguration {
             cm.createCache(com.cosmosoft.domain.User.class.getName() + ".authorities", jcacheConfiguration);
             cm.createCache(com.cosmosoft.domain.PersistentToken.class.getName(), jcacheConfiguration);
             cm.createCache(com.cosmosoft.domain.User.class.getName() + ".persistentTokens", jcacheConfiguration);
+            cm.createCache(com.cosmosoft.domain.Employee.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
